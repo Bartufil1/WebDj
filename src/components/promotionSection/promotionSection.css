@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Pirata+One&display=swap");
+
+.my-section {
+  width: 100%;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  opacity: 0;
+  transform: perspective(1000px);
+  transition: opacity 1s, transform 1s;
+}
+
+.my-section.in-view {
+  opacity: 1;
+  transform: perspective(1000px) rotateY(0deg);
+}
+
+.section-row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.section-column {
+  flex: 1 1 33%; /* Ensure columns take up equal space */
+  position: relative;
+  height: 20vw;
+  margin: 0;
+  backface-visibility: hidden;
+  transform: rotateY(90deg);
+  transition: transform 1s;
+}
+
+.section-column.in-view {
+  transform: rotateY(0deg);
+}
+
+.section-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0;
+}
+
+.white-box {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.section-caption {
+  text-align: center;
+  color: #000;
+}
+
+.section-caption h2 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.learn-more-button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #6a1b9a;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.learn-more-button:hover {
+  background-color: #4a148c;
+}
+
+.section-icon {
+  width: 80px;
+}
+
+.section-icon-two {
+  width: 80px;
+  margin-left: 20px;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 1024px) {
+  .section-column {
+    flex: 1 1 50%; /* Two columns for medium screens */
+    height: 30vw;
+  }
+
+  .section-caption h2 {
+    font-size: 1.25rem;
+  }
+
+  .section-icon,
+  .section-icon-two {
+    width: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-column {
+    flex: 1 1 100%; /* One column for small screens */
+    height: 40vw;
+  }
+
+  .section-caption h2 {
+    font-size: 1.25rem;
+  }
+
+  .section-icon,
+  .section-icon-two {
+    width: 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-column {
+    flex: 1 1 100%; /* One column for small screens */
+    height: 50vw;
+  }
+
+  .section-caption h2 {
+    font-size: 1rem;
+  }
+
+  .section-icon,
+  .section-icon-two {
+    width: 50px;
+  }
+
+  .learn-more-button {
+    padding: 8px 16px;
+  }
+}

@@ -1,0 +1,122 @@
+.live-streaming-section {
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 10px;
+  background: linear-gradient(to right, #ff5f6d, #8e44ad, #ffc371);
+  color: white;
+}
+
+.headerSpotify {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.headerSpotify h2 {
+  font-size: 1.25rem;
+  margin-bottom: 5px;
+}
+
+.headerSpotify p {
+  font-size: 0.6rem;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.spotify-player {
+  margin-top: 10px;
+}
+
+.images-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  gap: 20px; /* Add gap between image blocks */
+}
+
+.images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.images img {
+  width: 100px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+@media (max-width: 1024px) {
+  .headerSpotify h2 {
+    font-size: 1rem;
+  }
+
+  .headerSpotify p {
+    font-size: 0.5rem;
+  }
+
+  .images img {
+    width: 80px;
+    height: 120px;
+  }
+
+  .spotify-player iframe {
+    width: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .headerSpotify h2 {
+    font-size: 0.8rem;
+  }
+
+  .headerSpotify p {
+    font-size: 0.4rem;
+  }
+
+  .images img {
+    width: 60px;
+    height: 90px;
+  }
+
+  .spotify-player iframe {
+    width: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .headerSpotify h2 {
+    font-size: 0.6rem;
+  }
+
+  .headerSpotify p {
+    font-size: 0.3rem;
+  }
+
+  .images img {
+    width: 40px;
+    height: 60px;
+  }
+
+  .spotify-player iframe {
+    width: 300px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .images-container {
+    flex-direction: column;
+  }
+
+  .spotify-player {
+    order: 1; /* Przenieś Spotify na koniec */
+    margin-top: 20px;
+  }
+}

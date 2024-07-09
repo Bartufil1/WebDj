@@ -1,0 +1,116 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: "Arial", sans-serif;
+  color: white;
+  scroll-behavior: smooth;
+}
+
+.container {
+  padding: 0;
+  background-color: black;
+}
+
+.title {
+  text-align: center;
+  margin: 0;
+  position: relative;
+}
+
+.title p {
+  color: #ff4500;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 10px 0;
+}
+
+.neon-text {
+  font-family: "Arial", sans-serif;
+  font-size: 64px;
+  color: #ffd700;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0 0 5px #ffd700, 0 0 10px #ffd700, 0 0 20px #ffa500,
+    0 0 30px #ffa500, 0 0 40px #ffa500, 0 0 50px #ffa500, 0 0 60px #ffa500,
+    0 0 70px #ffa500;
+}
+
+.neon-subtext {
+  font-family: "Arial", sans-serif;
+  font-size: 24px;
+  color: #ffd700;
+  text-align: center;
+  text-shadow: 0 0 5px #ffd700, 0 0 10px #ffd700, 0 0 20px #ffa500,
+    0 0 30px #ffa500, 0 0 40px #ffa500, 0 0 50px #ffa500, 0 0 60px #ffa500,
+    0 0 70px #ffa500;
+}
+
+.section-about,
+.section-offer,
+.section-contact {
+  padding: 40px 20px;
+  margin: 20px 0;
+  border-radius: 10px;
+  background: url("../src/assets/dotsbackground.png") repeat;
+  background-size: cover;
+  color: white;
+}
+
+.section-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 36px;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.5),
+    0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.section-content {
+  font-family: "Arial", sans-serif;
+  font-size: 18px;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 0 3px rgba(255, 255, 255, 0.3),
+    0 0 5px rgba(255, 255, 255, 0.3);
+  line-height: 1.5;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: orange;
+  border-radius: 50%;
+  position: absolute;
+  animation: moveDots 5s linear infinite;
+}
+
+@keyframes moveDots {
+  0% {
+    transform: translateY(0) translateX(0);
+  }
+  100% {
+    transform: translateY(-1000px) translateX(1000px);
+  }
+}
+
+.dot:nth-child(1) {
+  top: 20%;
+  left: 15%;
+  animation-duration: 7s;
+}
+
+.dot:nth-child(2) {
+  top: 30%;
+  left: 25%;
+  animation-duration: 6s;
+}
+
+.dot:nth-child(3) {
+  top: 40%;
+  left: 35%;
+  animation-duration: 8s;
+}

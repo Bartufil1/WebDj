@@ -1,0 +1,23 @@
+.imageContact {
+  position: relative;
+  width: 100%;
+  height: 30vh; /* 50% wysokości widoku */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Ukryj nadmiar */
+}
+
+.imageContact img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Dopasuj obraz, aby pokrywał całą sekcję bez zniekształcenia */
+  filter: blur(5px); /* Dodaj efekt blur */
+}
+
+.textContact {
+  position: absolute;
+  color: #fff; /* Kolor tekstu */
+  font-size: 2rem; /* Rozmiar czcionki */
+  text-align: center; /* Wyśrodkuj tekst */
+}

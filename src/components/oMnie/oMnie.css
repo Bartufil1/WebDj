@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Pirata+One&display=swap");
+
+/* Container for the section */
+.musicevents {
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap; /* Allow flex items to wrap */
+  justify-content: space-between;
+  align-items: flex-start; /* Align items to the start to move the content up */
+  padding: 20px; /* Use relative units for padding */
+  position: relative;
+  z-index: 0; /* Ensure it’s on the right layer */
+}
+
+/* Left side of the section */
+.leftside {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the content horizontally */
+  justify-content: center; /* Center the content vertically */
+  margin-bottom: 20px;
+}
+
+/* Logo styling */
+.headphonelogo {
+  width: 80%; /* Adjust width as needed */
+  max-width: 250px;
+  margin-bottom: 30px;
+}
+
+/* Text styling */
+.textheadphoneLogo {
+  text-align: center;
+}
+
+/* Heading styling */
+.textheadphoneLogo h1 {
+  color: rgba(142, 68, 173, 0.8);
+  font-family: "Pirata One", cursive; /* Apply Pirata One font */
+  font-size: 3rem;
+  margin-top: -20px; /* Move the text up */
+}
+
+/* Paragraph styling */
+.textheadphoneLogo p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  font-family: "Pirata One", cursive; /* Apply Pirata One font */
+  margin-top: -20px; /* Move the text up */
+}
+
+/* Button styling */
+.cta-button {
+  padding: 10px 20px;
+  background-color: #6a1b9a; /* Button background color */
+  color: white; /* Button text color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #ff3d4e; /* Button hover background color */
+}
+
+/* Right side of the section */
+.rightside {
+  flex: 1;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the image horizontally */
+  justify-content: center; /* Center the image vertically */
+  padding: 20px;
+}
+
+/* Image styling */
+.eventimage {
+  width: 100%; /* Make the image width 100% of the container */
+  max-width: 500px;
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Ensure the image fits within the container */
+  border-radius: 10px;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+  .textheadphoneLogo h1 {
+    font-size: 2.5rem;
+  }
+
+  .textheadphoneLogo p {
+    font-size: 1rem;
+  }
+
+  .cta-button {
+    padding: 8px 16px;
+  }
+
+  .rightside {
+    margin-top: 50px; /* Reduce margin on smaller screens */
+  }
+
+  .eventimage {
+    max-width: 300px; /* Adjust image size on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .leftside,
+  .rightside {
+    flex: 1 1 100%; /* Flex items to take full width on smaller screens */
+  }
+
+  .textheadphoneLogo h1 {
+    font-size: 2rem;
+  }
+
+  .textheadphoneLogo p {
+    font-size: 0.9rem;
+  }
+
+  .cta-button {
+    padding: 6px 12px;
+  }
+
+  .eventimage {
+    max-width: 250px; /* Further adjust image size for very small screens */
+  }
+}
