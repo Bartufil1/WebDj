@@ -16,7 +16,7 @@ Strona posiada nowoczesny design, responsywność oraz pełną funkcjonalność.
 ## Jak uruchomić projekt lokalnie
 Aby uruchomić projekt na swoim komputerze, postępuj zgodnie z poniższymi krokami:
 1. Sklonuj repozytorium
-2. W termianlu wpisz :
+2. W termianalu wpisz :
 - npm install
 - npm run start
 3. Aplikacja powinna automatycznie otworzyć się w przeglądarce pod adresem http://localhost:3000. Jeśli nie, otwórz przeglądarkę i wpisz ten adres ręcznie.
