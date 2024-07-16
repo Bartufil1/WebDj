@@ -6,12 +6,12 @@
 Strona posiada nowoczesny design, responsywność oraz pełną funkcjonalność.
 
 ### Sekcje na stronie:
-- **Strona główna:** 
-- **O mnie:** 
-- **Oferta:**
-- **Playlista Spotify:** 
-- **Galeria:**
-- **Kontakt:** 
+- **Strona główna** 
+- **O mnie** 
+- **Oferta**
+- **Playlista Spotify** 
+- **Galeria**
+- **Kontakt** 
 
 ## Jak uruchomić projekt lokalnie
 Aby uruchomić projekt na swoim komputerze, postępuj zgodnie z poniższymi krokami:
